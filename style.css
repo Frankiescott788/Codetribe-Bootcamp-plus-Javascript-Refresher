@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(211, 211, 211, 0.37);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body > div > h1:nth-child(1) {
+    font-size: 30pt;
+    text-align: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+    margin-block: 30px;
+}
+.card {
+    background: skyblue;
+    padding: 40px;
+    width: 20px;
+    height: 20px;
+    margin-block: 10px;
+    border-radius: 6px;
+    border: 1px solid #2425263f;
+    transition: .3s ease-in-out;
+}
+.alphas{ 
+    display: none;
+}
+.alphasDisplay {
+    display: block;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+.flipped {
+    background: rgba(0, 128, 0, 0.308);
+}
+.success {
+    background: rgba(50, 205, 50, 0.493);
+}
